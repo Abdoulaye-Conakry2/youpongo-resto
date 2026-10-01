@@ -1,42 +1,50 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chez Maman - Maquis Yopougon</title>
+<title>YOUPONGO RESTO - Yopougon, Abidjan</title>
 <style>
-body{margin:0;font-family:Arial;background:#fff8f0}
-header{background:#ff6600;color:white;padding:20px;text-align:center}
-.hero{padding:40px 20px;text-align:center}
-.hero h1{font-size:28px;color:#333}
-.btn-whatsapp{display:inline-block;background:#25D366;color:white;padding:18px 30px;border-radius:50px;text-decoration:none;font-weight:bold;font-size:18px;margin-top:20px}
-.menu{display:grid;grid-template-columns:1fr 1fr;gap:15px;padding:20px}
-.card{border:1px solid #ddd;border-radius:10px;padding:15px;text-align:center;background:white}
-footer{background:#222;color:white;text-align:center;padding:15px;margin-top:20px}
+  body{margin:0;font-family:Arial, sans-serif;background:#fdf6ec;color:#2b1a0e}
+  header{background:#2b1a0e;color:#fff;padding:15px 40px;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-weight:bold;font-size:22px;color:#f5a962;line-height:1}
+  nav a{color:#fff;margin:0 12px;text-decoration:none}
+  .btn{background:#f5a962;color:#2b1a0e;padding:10px 20px;border-radius:25px;text-decoration:none;font-weight:bold}
+  .hero{display:flex;background:#1a0f08;color:#fff;min-height:400px}
+  .hero-text{padding:50px;flex:1}
+  .hero-img{flex:1.2;background:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4') center/cover}
+  .dishes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:40px;background:#f5efe2}
+  .card{background:#fff;padding:15px;border-radius:15px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.1)}
+  .price{color:#b45309;font-weight:bold}
+  footer{background:#2b1a0e;color:#fff;padding:30px 40px;display:flex;justify-content:space-between}
 </style>
 </head>
 <body>
 <header>
-<h1>🍛 Chez Maman - Yopougon</h1>
-<p>Abidjan - Saveur authentique ivoirienne</p>
+  <div class="logo">YOUPONGO<br>RESTO<br><small style="font-size:10px">Yopougon, Abidjan</small></div>
+  <nav><a href="#">Accueil</a><a href="#">Menu</a><a href="#">Contact</a></nav>
+  <a class="btn" href="#">Réserver</a>
 </header>
 
 <div class="hero">
-<h1>Bienvenue chez nous !</h1>
-<p>Poulet braisé, Attiéké, Poisson, Garba - Livraison rapide à Yopougon</p>
-<a class="btn-whatsapp" href="https://wa.me/224622000158?text=Bonjour%20Chez%20Maman,%20je%20veux%20commander%20svp">📱 Commander sur WhatsApp - 622 00 01 58</a>
+  <div class="hero-text">
+    <h1>Le goût authentique<br>de Yopougon</h1>
+    <p>Savourez l'âme culinaire de Yopougon — attiéké, poisson braisé et saveurs ivoiriennes, dans une ambiance chic et chaleureuse.</p>
+    <br>
+    <a class="btn" href="#">Voir le Menu</a>
+  </div>
+  <div class="hero-img"></div>
 </div>
 
-<div class="menu">
-<div class="card"><h3>🍗 Poulet Braisé</h3><p>5.000 FCFA</p></div>
-<div class="card"><h3>🐟 Poisson Braisé</h3><p>6.000 FCFA</p></div>
-<div class="card"><h3>🍚 Attiéké Poisson</h3><p>3.500 FCFA</p></div>
-<div class="card"><h3>🥘 Garba</h3><p>2.500 FCFA</p></div>
+<div class="dishes">
+  <div class="card"><h3>Attiéké Poisson Grillé</h3><p>Poisson frais grillé aux épices</p><span class="price">5 500 FCFA</span></div>
+  <div class="card"><h3>Poisson Braisé & Plantain</h3><p>Braisé au feu de bois</p><span class="price">6 000 FCFA</span></div>
+  <div class="card"><h3>Salade Attiéké Légumes</h3><p>Version végétarienne fraîche</p><span class="price">3 800 FCFA</span></div>
 </div>
 
-<a class="btn-whatsapp" style="display:block;text-align:center;margin:20px;" href="https://wa.me/224622000158">💬 Discuter sur WhatsApp</a>
-
-<footer>📍 Yopougon, Abidjan | 📞 622 00 01 58 | WhatsApp 24h/24</footer>
+<footer>
+  <div>YOUPONGO RESTO<br>Yopougon, Abidjan</div>
+  <div>Ouvert 11h-23h • Terrasse</div>
+</footer>
 </body>
 </html>
